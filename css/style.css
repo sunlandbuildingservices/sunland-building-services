@@ -1,0 +1,69 @@
+* {
+	box-sizing: border-box;
+}
+.tall {
+	height: 500px;
+	border-bottom:solid 5px rgba(52,52,52,.2);
+}
+.medium {
+	height: 300px;
+	border-bottom:solid 5px rgba(52,52,52,.2);
+	border-top:solid 5px rgba(52,52,52,.2);
+}
+header {
+	width:100%;
+	height:90px;
+	background-color:#F5F5F5;
+	border-bottom:solid 5px rgba(52,52,52,.2);
+}
+.left {
+	float:left;
+}
+.right {
+	float:right;
+}
+.hero {
+	width:100%;
+	background-color:#008BC1;
+}
+.hiw {
+	width:100%;
+	background-color:#F5F5F5;
+}
+.testimonial {
+	width:100%;
+	background-color: #343434;
+}
+.free-quote-cta {
+	width:100%;
+	height: 150px;
+	background-color:#008BC1;
+	border-bottom:solid 5px rgba(52,52,52,.2);
+}
+.value-prop {
+	width:100%;
+	height: 450px;
+	background-color:#ffffff;
+}
+.family {
+	width:48.1%;
+	height:400px;
+	background-color:#d8d8d8;
+	margin-top:50px;
+}
+.grime {
+	width:48.1%;
+	height:400px;
+	background-color:#d8d8d8;
+	margin-bottom:50px;
+}
+.grime-fighters {
+	width:100%;
+	height: 450px;
+	background-color:#ffffff;
+	margin-top: 50px;
+}
+footer {
+	width:100%;
+	background-color:#008BC1
+	}
