@@ -29,15 +29,14 @@ h2 {
 }
 h3 {
 	font-family: 'Open Sans', sans-serif;
- 	font-size: 24px;
- 	font-weight: 300;
+ 	font-size: 26px;
  	text-align: center;
   	color: #fff;
-  	font-weight: 600;
+  	font-weight: 300;
 }
 p {
 	font-family: 'OpenSans', sans-serif;
-	font-size: 16px;
+	font-size: 15px;
 	color:#343434;
 	letter-spacing: -0px;
     line-height: 30px;
@@ -58,13 +57,13 @@ nav {
 	float:right;
     vertical-align: center;
     margin-right:25px;
-    margin-top:.5%;
+    margin-top:1%;
 }
 nav ul {
 	list-style-type: none;
     font-family: 'OpenSans', sans-serif;
-	font-size: 20px;
-    font-weight: 200;
+	font-size: 15px;
+    font-weight: 300;
 }
 nav ul li {
 	display: inline-block;
@@ -89,6 +88,10 @@ aside a {
 	text-decoration: none;
 	color:#008BC1;
 }
+/****************************/
+/*class styling 
+/****************************/
+
 .left {
 	float:left;
 }
@@ -249,7 +252,7 @@ aside a {
 	margin-left: 4.9%;;
 }
 .article {
-    width: 65%;
+    width: 50%;
     margin: 0 auto;
     margin-top:5%;
     margin-bottom:5%;
@@ -274,9 +277,12 @@ aside a {
     margin: auto;
     width:100%;
 }
+.article p {
+    margin-bottom: 5%;
+}
 footer {
 	width:100%;
-    max-height: 600px;
+    max-height: 400px;
 	background-color:#008BC1
 	}
 footer ul {
@@ -295,9 +301,20 @@ footer a {
     font-size: 14px;
 	line-height: 2;
     font-weight: 100;
-    margin-right:5%;
+    margin-right:4.5%;
 }
+
+/****************************/
+/*id styling 
+/****************************/
+
 #footer-content {
-    margin-left:15%;
+    margin-left:20%;
     margin-top:3%;
+    
 }
+#legal {
+    font-size: 10px;
+}
+#logo {
+    margin-left: 5%;
