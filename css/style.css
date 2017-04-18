@@ -112,14 +112,13 @@ aside a {
 /****************************/
 
 .services {
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
-    margin-top:10%;
-    text-align:center;
+    margin-top:5%;
 }
 .services ul li{
     list-style: none;
-    margin-right:5.6%;
+    margin-right:6.4%;
     margin-bottom:6.4%;
 }
 
