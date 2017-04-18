@@ -106,6 +106,24 @@ aside a {
 	text-decoration: none;
 	color:#008BC1;
 }
+
+/****************************/
+/*services page styling
+/****************************/
+
+.services {
+    width: 60%;
+    margin: 0 auto;
+    margin-top:10%;
+    text-align:center;
+}
+.services ul li{
+    list-style: none;
+    margin-right:5.6%;
+    margin-bottom:6.4%;
+}
+
+
 /****************************/
 /*how it works styling
 /****************************/
