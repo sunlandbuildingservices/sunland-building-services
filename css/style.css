@@ -117,7 +117,7 @@ aside a {
 .hiw {
     width:75%;
     margin: 0 auto;
-    margin-top:5%;
+    padding-top:2%;
     text-align: center;
 }
 .hiw-image {
@@ -129,9 +129,14 @@ aside a {
 }
 .hiw li {
     width: 30%;
-    font-family: 'OpenSans', sans-serif;
-    color:#343434;
     text-align: center;
+    margin-bottom: 5%;
+}
+.hiw li p {
+    font-family: 'OpenSans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color:#343434;
 }
 .left {
 	float:left;
