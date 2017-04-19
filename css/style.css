@@ -115,11 +115,20 @@ aside a {
     width: 65%;
     margin: 0 auto;
     margin-top:5%;
+    margin-bottom:10%;
+    text-align: center;
+}
+.services p {
+    margin-bottom: 5%;
 }
 .services ul li{
     list-style: none;
     margin-right:6.4%;
     margin-bottom:6.4%;
+}
+.services h2 {
+    color: #343434;
+    margin-bottom: 5%;
 }
 
 
