@@ -1,6 +1,10 @@
 * {
 	box-sizing: border-box;
 }
+
+body {
+    font-family: 'OpenSans', sans-serif;
+}
 .tall {
 	height: 500px;
 	border-bottom:solid 0px rgba(52,52,52,.2);
@@ -14,7 +18,6 @@
 /*layout
 /****************************/
 h1 {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   font-size: 50px;
   text-align: center;
@@ -22,26 +25,22 @@ h1 {
 
 }
 h2 {
-  	font-family: 'Open Sans', sans-serif;
  	font-size: 30px;
  	font-weight: 600;
   	font-weight: 600;
 }
 h3 {
-	font-family: 'Open Sans', sans-serif;
  	font-size: 26px;
  	text-align: center;
   	color: #fff;
   	font-weight: 300;
 }
 h5 {
-    font-family: 'OpenSans', sans-serif;
     font-size: 16px;
     color:#343434;
     font-weight: 700;
 }
 p {
-	font-family: 'OpenSans', sans-serif;
 	font-size: 15px;
 	color:#343434;
 	letter-spacing: -0px;
@@ -64,32 +63,39 @@ header img {
 	margin-top:20px;
 	width: 100px;
 }
+
+.wrapper {
+    max-width: 1280px;
+    margin: auto;
+}
+
 nav {
 	float:right;
-    vertical-align: center;
-    margin-right:25px;
-    margin-top:1%;
 }
 nav ul {
 	list-style-type: none;
-    font-family: 'OpenSans', sans-serif;
 	font-size: 15px;
     font-weight: 300;
 }
 nav ul li {
-	display: inline-block;
-	width:125px;
-	height:50px;
-	margin-left: 10px;
-	margin-right: 10px;
+    float:left;
 }
 nav ul li a {
     text-decoration: none;
     color:#343434;
+    display: block;
+    padding: 20px 15px;
 }
 nav ul li a:hover {
     color:#d8d8d8;
     
+}
+nav ul li:first-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:1em;
+    height:1em;
 }
 #logo {
     margin-left: 5%;
@@ -141,13 +147,19 @@ aside a {
 	background-color:#F8F8F8;
 }
 .hiw {
-    width:75%;
+    width:80%;
     margin: 0 auto;
     padding-top:2%;
     text-align: center;
 }
+.hiw-col{
+    width:100%;
+    margin:1px;
+    max-height:80%;
+}
 .hiw-image {
-    width:150px;
+    max-width:150px;
+    min-width: 70px;
     margin-top:5%;
 }
 .hiw ul {
@@ -159,7 +171,6 @@ aside a {
     margin-bottom: 2%;
 }
 .hiw li p {
-    font-family: 'OpenSans', sans-serif;
     font-size: 16px;
     line-height: 24px;
     color:#343434;
@@ -185,7 +196,6 @@ aside a {
     margin-bottom: 5%;
 }
 .primary-cta {
-	font-family: 'OpenSans', sans-serif;
 	font-size: 20px;
 	font-weight: bold;
     color:#ffffff;
@@ -198,7 +208,6 @@ aside a {
     text-align: center;
 }
 .secondary-cta {
-	font-family: 'OpenSans', sans-serif;
 	color: #008bc1;
 	font-weight: bold;
 	width: 300px;
@@ -215,7 +224,6 @@ aside a {
 	background-color: #343434;
 }
 .testimonial h2 {
-	font-family: 'Open Sans', sans-serif;
  	font-size: 24px;
  	font-weight: 300;
  	text-align: center;
@@ -225,7 +233,6 @@ aside a {
   	margin-top:65px;
 }
 .testimonial-1 {
-	font-family: 'OpenSans', sans-serif;
 	color: #ffffff;
 	font-weight: 200;
   	position: relative;
@@ -255,7 +262,6 @@ aside a {
 	border-bottom:solid 5px rgba(52,52,52,.2);
 }
 .value-prop {
-	font-style: 'OpenSans', sans-serif;
 	width:100%;
 	height: 450px;
 	background-color:#fff;
@@ -275,7 +281,6 @@ aside a {
 }
 .value-prop p {
 	width:39%;
-	font-family: 'OpenSans', sans-serif;
 	font-size: 20px;
 	font-weight:300;
 	color:#343434;
@@ -311,7 +316,6 @@ aside a {
 }
 .grime-fighters p {
 	width:39%;
-	font-family: 'OpenSans', sans-serif;
 	font-size: 20px;
 	font-weight:300;
 	color:#343434;
@@ -336,7 +340,6 @@ aside a {
     text-align: left;
 }
 .article li {
-    font-family: 'OpenSans', sans-serif;
     font-size: 16px;
     font-weight: 600;
     color: #343434;
@@ -363,8 +366,10 @@ aside a {
 /******************************/
 footer {
 	width:100%;
-    height: 400px;
-	background-color:#008BC1
+	background-color:#008BC1;
+    height: 300px;
+	border-bottom:solid 5px rgba(52,52,52,.2);
+	border-top:solid 5px rgba(52,52,52,.2);
 	}
 footer ul {
     list-style-type: none;
@@ -378,7 +383,6 @@ footer a {
 }
 .footer-col {
     color:#ffffff;
-    font-family: 'OpenSans', sans-serif;
     font-size: 14px;
 	line-height: 2;
     font-weight: 100;
@@ -398,61 +402,165 @@ footer a {
     font-size: 8px;
     color:#f8f8f8;
 }
+/****************************************/
+/*form styling*current as of 04-26-2017*/
+/*functionality of the form comes from*/
+/*https://formspree.io/*/
 
-/*mobile css layout*/
-
-@media screen and (max-width:414px) {
-
-header nav ul li {
-    height: 0px;
+input, textarea, select{
+  display: block;
 }
 
-h1 {
-        font-size:26px;
-    }
-h2 {
-        font-size:20px;
-    }
-h3 {
-        font-size:16px;
-    }
-p {
-        font-size: 12px;
-    }
-.article p {
-        font-size: 12px;
-        line-height: 20px;
-    }
+input {
+  margin-bottom:2em;
+  margin-top:2em;
+  padding:15px;
+}
+input[type="text"] {
+  width: 300px;
+  background:#f8f8f8;
+  color:#000000;
+  border-radius:5px;
+    font-size: 15px;
+}
+input[type="email"] {
+  width: 300px;
+  background:#f8f8f8;
+  color:#000000;
+  border-radius:5px;
+    font-size: 15px;
+}
+input[type="tel"] {
+  width: 300px;
+  background:#f8f8f8;
+  color:#000000;
+  border-radius:5px;
+    font-size: 15px;
+}
+#details {
+  width: 300px;
+  height: 100px;
+  background:#f8f8f8;
+  color:#000000;
+  border-radius:5px;
+    font-size: 15px;
+  padding:15px;
+}
+input[type="radio"]{
+  display:inline-block;
+  background:blue;
+}
+
+input[type="radio"]+label::before{ 
+  content:"";
+  display:inline-block; 
+  width:1em;
+  height:1em;
+  background:blue;
+}
+
+input[type="radio"]:checked+label::before{
+  content:"\2713";
+  text-align:center;
+  background:green;
+  color: white;
+}
+input[type="radio"]{
+  display:none;
+}
+#contact-form {
+  display:block;
+  text-align:center;
+}
+form {
+  display:inline-block;
+  margin:0 auto;
+  text-align:left;
+}
+#contact-content {
+  width:25%;
+    min-width: 300px;
+  margin:0 auto;
+}
+/***********************/
+/*end form style sheet*/
+/*********************/
+
+
+/***********************/
+/*begin styling of the hamburger menu on desktop*/
+/*********************/
+
+
+.line {
+    display:block;
+    width:25px;
+    height:4px;
+    border-radius:50px;
+    margin-bottom:10px;
+    background-color:#343434;
+}
+
+/********************/
+/*mobile css layout*/
+/******************/
+
+@media screen and (max-width:500px) {
+    
+.wrapper {
+    position: relative;
+}
+
+header nav ul li:first-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:1em;
+    height:1em;
+}
+/***
+    header nav ul li {
+    height: 0px;***/
+}
 .article img {
         display: none;
     }
-/*
-.footer-content {
-	width:100%;
-	background-color:#008BC1;
-	}
-*/
-footer {
-/*
-	width:100%;
-	background-color:#008BC1
-*/
-    display: none;
-	}
-/*
-footer a {
-    display: none;
-}
-*/
-/*
-.footer-col {
-    display: none;
-}
-*/
-/*
-#legal {
-        display: none;
-    }
-*/
+/*************************************************************************/
+/*crap... footer column on desktop is all messed up because of the below*/
+/***********************************************************************/
+
+/*.footer-col {
+    float:none;
+        
+    } 
+/**********************************it's april 26th 2017/
+/*we'll just try and un-cronenberg this one tomorrow*/
+/****************************************************/
     
-}
+footer {
+    
+    width:100%;
+	background-color:#008BC1;
+    height: 100%;
+	border-bottom:solid 5px rgba(52,52,52,.2);
+	border-top:solid 5px rgba(52,52,52,.2);
+    
+	}
+    
+/**********************************************/
+/*04262017 - content prioritization*/
+/*concealed the "Sunland Difference" section on mobile*/
+/**************************************/
+    
+.hiw {
+  display:none;
+    }
+.gray-box {
+    display: none;
+    }
+/**********************************************/
+/*04262017 - content prioritization*/
+/*concealed the "Sunland Difference" section on mobile*/
+/**************************************/
+          
+    
