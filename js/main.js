@@ -5,13 +5,13 @@
 $(document).ready(function(){
 $("nav ul li:first-child").click(function(){
 	console.log("hamburger clicked")
-	//very coll slide toggle function, doesn't work in
+	//very cool slide toggle function, doesn't work in
 	//all browsers
-	// $("nav ul li:not(:first-child)").slideToggle();
+	$("nav ul li:not(:first-child)").slideToggle();
 	//cool sliding toggle that directly targets the class
 	//of the navigation in the mobile css
-	$("nav").toggleClass("show");
-	console.log("navigation opened")
+	// $("nav").toggleClass("show");
+	// console.log("navigation opened")
 })
   
 });
