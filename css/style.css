@@ -613,12 +613,16 @@ footer {
 /*******************************/
 
 .article {
-  width:60%;
+  width:80%;
   min-width:300px;
 
 }
 .article h2, .article h3{
-  font-size:22px;
+  font-size:24px;
+}
+.article p {
+  font-size:16px;
+  line-height: 28px;
 }
 
 
