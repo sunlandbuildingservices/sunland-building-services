@@ -18,22 +18,27 @@ body {
 /*layout
 /****************************/
 h1 {
-  font-weight: 700;
-  font-size: 50px;
-  text-align: center;
-  color:white;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color:white;
 
 }
 h2 {
- 	font-size: 30px;
- 	font-weight: 600;
+   	font-size: 30px;
+   	font-weight: 600;
   	font-weight: 600;
 }
 h3 {
- 	font-size: 26px;
- 	text-align: center;
-  	color: #fff;
-  	font-weight: 300;
+   	font-size: 26px;
+   	text-align: center;
+    color: #fff;
+    font-weight: 300;
+}
+h4 {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 300;
 }
 h5 {
     font-size: 16px;
@@ -41,9 +46,9 @@ h5 {
     font-weight: 700;
 }
 p {
-	font-size: 15px;
-	color:#343434;
-	letter-spacing: -0px;
+  	font-size: 15px;
+  	color:#343434;
+  	letter-spacing: -0px;
     line-height: 30px;
 }
 
@@ -57,6 +62,7 @@ header {
 	background-color:#F5F5F5;
 	color: #fff;
 	border-bottom:solid 5px rgba(52,52,52,.2);
+  position: relative;
 }
 header img {
 	margin-left:20px;
@@ -74,8 +80,8 @@ nav {
 }
 nav ul {
 	list-style-type: none;
-	font-size: 15px;
-    font-weight: 300;
+	font-size: 20px;
+  font-weight: 300;
 }
 nav ul li {
     float:left;
@@ -84,7 +90,7 @@ nav ul li a {
     text-decoration: none;
     color:#343434;
     display: block;
-    padding: 20px 15px;
+    padding: 10px 20px;
 }
 nav ul li a:hover {
     color:#d8d8d8;
@@ -92,10 +98,10 @@ nav ul li a:hover {
 }
 nav ul li:first-child {
     position: absolute;
-    top: 0;
-    right: 0;
-    width:1em;
-    height:1em;
+    background-color: transparent;
+    top: 30px;
+    right: 30px;
+    display: none;
 }
 #logo {
     margin-left: 5%;
@@ -184,10 +190,11 @@ aside a {
 .hero {
 	width:100%;
 	background-color:#008BC1;
-    padding: 200px 0px 200px 0px;
+  padding: 200px 0px 200px 0px;
 	text-align: center;
-    position: relative;
-    height: 40%;
+  background: url(../images/los-angeles-x-large.png) no-repeat center center fixed;
+  position: relative;
+  height: 40%;
 }
 .hero h1 {
     position: relative;
@@ -251,77 +258,56 @@ aside a {
 	height: 150px;
 	background-color:#008BC1;
 	border-bottom:solid 5px rgba(52,52,52,.2);
-	margin-bottom:3.6%;
+
 }
 .free-quote-dark {
 	padding: 40px 0px;
-  	text-align: center;
+  text-align: center;
 	width:100%;
 	height: 150px;
 	background-color:#343434;
 	border-bottom:solid 5px rgba(52,52,52,.2);
 }
-.value-prop {
+
+/**********************************/
+/*** begin "about sunland" styling */
+/********************************/
+
+.about {
 	width:100%;
-	height: 450px;
-	background-color:#fff;
+  height:1000px;
+/*	background-color:#fff;*/
 	text-align: center;
+  padding-left:8%;
+  padding-top:5%;
 }
-.biz-and-fam {
-    width:50%;
-    margin-left: auto;
-    margin-right: auto;
+.about-one {
+  float: left;
+  width:100%
+  height:500px;
 }
-.family {
-	width:48.1%;
-	height:400px;
-	background-color:#d8d8d8;
-	margin-top:50px;
-	text-align: center;
+.about-two {
+  float: left;
+  width:100%
+  height:500px;
 }
-.value-prop p {
-	width:39%;
-	font-size: 20px;
-	font-weight:300;
-	color:#343434;
-	letter-spacing: -0px;
-	width:39%;
-	margin-left:6.3%;
-	margin-right:3.5%;
-	margin-bottom:6.1%;
-	float:left;
+.image-medium {
+	width:50%;
+  height: 100%;
 }
-.services-button {
-	margin-bottom: 12%;
-	margin-right: 16%;
-	margin-left: 17%;
+
+.about-content {
+width:50%;
+height:100%;
+padding:5%;
+
 }
-.learn-more-button {
-	margin-top: 10%;
-	margin-right: 14.8%;
-	margin-left: 14.8%;
-}
-.grime {
-	width:48.1%;
-	height:400px;
-	background-color:#d8d8d8;
-	margin-bottom:50px;
-}
-.grime-fighters {
-	width:100%;
-	height: 450px;
-	background-color:#ffffff;
-	margin-top: 50px;
-	text-align: center;
-}
-.grime-fighters p {
-	width:39%;
-	font-size: 20px;
-	font-weight:300;
-	color:#343434;
-	letter-spacing: -0px;
-	margin-left: 4.9%;;
-}
+
+/**********************************/
+/*** end "about sunland" styling ***/
+/********************************/
+
+
 /******************************/
 /*/article class styling
 /******************************/
@@ -405,7 +391,8 @@ footer a {
 /****************************************/
 /*form styling*current as of 04-26-2017*/
 /*functionality of the form comes from*/
-/*https://formspree.io/*/
+/*https://formspree.io/***************/
+/************************************/
 
 input, textarea, select{
   display: block;
@@ -451,6 +438,27 @@ input[type="radio"]{
   background:blue;
 }
 
+/************************/
+/** begin submit button styling ***/
+/***********************/
+
+#submit {
+  width:100%;
+  height: 72px;
+  background-color: #ff9500;
+  border-radius: 50px;
+  border:none;
+  font-family: 'OpenSans' 'sans-serif';
+  font-size:;
+  font-size: 20px;
+  font-weight: bold;
+  color:#ffffff;
+}
+
+/************************/
+/** end submit button styling ***/
+/***********************/
+
 input[type="radio"]+label::before{ 
   content:"";
   display:inline-block; 
@@ -494,59 +502,56 @@ form {
 
 .line {
     display:block;
-    width:25px;
+    width:30px;
     height:4px;
     border-radius:50px;
     margin-bottom:10px;
-    background-color:#343434;
+    background-color:#4D4D50;
 }
-
+/*********************/
 /********************/
 /*mobile css layout*/
 /******************/
+/*****************/
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:768px) {
     
 .wrapper {
     position: relative;
 }
 
-header nav ul li:first-child {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width:1em;
-    height:1em;
-}
-/***
-    header nav ul li {
-    height: 0px;***/
-}
-.article img {
-        display: none;
-    }
-/*************************************************************************/
-/*crap... footer column on desktop is all messed up because of the below*/
-/***********************************************************************/
+/***********************/
+/* start: mobile nav  */
+/*********************/
 
-/*.footer-col {
+/***********************/
+/* hamburger visible  */
+/*********************/
+
+nav ul li:first-child {
+    display: block;
+}
+
+nav {
+  float:none;
+  text-align: center;
+  transition: 1s height;
+  height: 0;
+
+}
+
+nav ul {
+  display: block;
+}
+
+nav ul li {
     float:none;
-        
-    } 
-/**********************************it's april 26th 2017/
-/*we'll just try and un-cronenberg this one tomorrow*/
-/****************************************************/
-    
-footer {
-    
-    width:100%;
-	background-color:#008BC1;
-    height: 100%;
-	border-bottom:solid 5px rgba(52,52,52,.2);
-	border-top:solid 5px rgba(52,52,52,.2);
-    
-	}
-    
+}
+
+/**********************/
+/* end: mobile nav  **/
+/********************/
+
 /**********************************************/
 /*04262017 - content prioritization*/
 /*concealed the "Sunland Difference" section on mobile*/
@@ -562,5 +567,90 @@ footer {
 /*04262017 - content prioritization*/
 /*concealed the "Sunland Difference" section on mobile*/
 /**************************************/
+
+/*****************************************/
+/* start: mobile "about sunland" styling*/
+/***************************************/
+
+.about-one {
+  float: none;
+
+}
+.about-two {
+  float: none;
+
+}
+.about-content {
+  float:none;
+
+}
+.about-image {
+  float:none;
+
+}
+
+/************************/
+/* start: mobile footer*/
+/**********************/
+
+    
+footer {
+    
+  width:100%;
+	background-color:#008BC1;
+  height: 100%;
+	border-bottom:solid 5px rgba(52,52,52,.2);
+	border-top:solid 5px rgba(52,52,52,.2);
+    
+	}
+ 
+/************************/
+/* end: mobile footer*/
+/**********************/  
+
+/*********************************/
+/* start: mobile article styling*/
+/*******************************/
+
+.article {
+  width:60%;
+  min-width:300px;
+
+}
+.article h2, .article h3{
+  font-size:22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           
     
