@@ -6,19 +6,28 @@
 <!-- the ".." jumps out of the current directoyr to access the global image folder and stylesheet. -->
 </head>
 <body>
-<header>
-	<a href="#"><img id="logo" src="images/sunland_logo.png" width="100px"/></a>
-	 	<nav>
-			<ul>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav> 
-</header>
+  <header>
+        <div class="wrapper">
+        <a href="/"><img id="logo" src="images/sunland_logo.png" width="100px"/></a>
+            <nav>
+                <ul>
+                    <li>
+    <!-- hamburger nav lines for mobile-->
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+    <!-- hamburger nav lines for mobile-->
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <section class="article">
         <h2>Sunland Window Cleaning in The Community</h2>
-        <img class="article-image" src="images/sunland_superheroes.jpg">
+        <img class="article-image" src="images/sunland-superheroes-all.jpg">
         <h3>Sunland’s Superhero “Grime Fighters”</h3>
             <p>For the past five years, the Sunland team has donned superhero costumes and taken to the skies to clean some windows and lift some spirits of the kids at The Mattel Children’s Hospital UCLA. What started as a way to cheer up some sick kids turned into a great story that has since become a big part of the Sunland Window Cleaning business: Making our community a cleaner and happier place, any way that we can.</p>
         <p>Check back here regularly for more updates on when Sunland Window Cleaning’s next Superhero Day will be.</p>
@@ -35,13 +44,12 @@
     </section>
    
 <!-- ".." jumps out of the existing directory and links to the parent directory. This ".." before each "a" is not a global command. In directories that are sibling to this page, the ".." is not needed --> 
-<footer class="medium">
+<footer>
     <div id="footer-content">
         <ul class="footer-col left">
             <li><strong>SUNLAND</strong></li>
             <li><a href="about-us">About Us</a></li>
             <li><a href="sunland-community.html">Community</a></li>
-            <li><a href="news">In The News</a></li>
         </ul>
         <ul class="footer-col left">
             <li><strong>SERVICES</strong></li>
@@ -64,8 +72,8 @@
             <li>Address: 185 Viking Ave</li>
             <li>Brea, CA 92821</li>
         </ul>
+        <p id="legal">© 2017 Sunland Window Cleaning. All Rights Reserved. Website by <a href="http://www.cartoonfood.com">Cartoon Food</a></p>
     </div>
 </footer>
-    <p id="legal">© 2017 Sunland Window Cleaning. All Rights Reserved. Website by <a href="http://www.cartoonfood.com">Cartoon Food</a></p>
     </body>
 </html>
