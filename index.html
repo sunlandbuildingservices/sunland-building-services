@@ -7,11 +7,16 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800" rel="stylesheet">
 
+    <!-- link to Jquery and external javascript file -->
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
 </head>
 <body>
     <header>
         <div class="wrapper">
-    	<a href="/"><img id="logo" src="images/sunland_logo.png" width="100px"/></a>
+    	<a href="index.html"><img id="logo" src="images/sunland_logo.png" width="100px"/></a>
     	 	<nav>
     			<ul>
                     <li>
@@ -29,8 +34,8 @@
         </div>
     </header>
 <section class="hero tall">
-    	<h1>Buildings Are Our Business, Since 1973.</h1>
-		<h3>Profesional building services in Southern California. Because a great sky deserves a clear view.</h3>
+    	<h1>Buildings Are Our Business, Since 1985.</h1>
+		<h3>Professional building services in Southern California. Because a great sky deserves a clear view.</h3>
 	<div class="primary-cta"><a href="#">GET A FREE QUOTE</a>
 	</div>
 </section>
@@ -60,34 +65,58 @@
 	<h2>What Our Customers Say</h2>
 	<p class="testimonial-1"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consequat nisl ut dui vulputate, ac condimentum ipsum molestie. Sed tincidunt porta pellentesque. Vivamus sapien nulla. - Bob Anderson</i></p>
 </section>
+
 <aside class="free-quote">
 	<div class="secondary-cta">
         <a href="#">GET A FREE QUOTE</a>
 	</div>
 
 </aside>
- 	<div id="about-us"> 
-		<aside class="value-prop">
-			<div class="family left">
+
+<!-- begin "about sunland" section -->
+<section class="about">
+    <aside class="about-one">
+
+            <div class="about-image">
+
+                <img class="image-medium left" src="images/sunland-superheroes.jpg">
+
             </div>
-				<h2 class="biz-family">A Business and a Family</h2>
-					<p class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor et tellus vitae ultrices. Vestibulum pulvinar ante nec condimentum fringilla</p>
-		<aside class="services-button">
-			<div class="secondary-cta right"><a class="services-button" href="our-services.html">VIEW SERVICES</a>
-			</div>
-		</aside><!-- end services-button aside-->
-		</aside><!--end value-prop aside-->
-		<aside class="grime-fighters">
-			<div class="grime right">
-			</div>
-				<h2>Super Hero Grime Fighters</h2>
+
+            <div class="about-content left">
+
+				<h2>A Business and a Family</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor et tellus vitae ultrices. Vestibulum pulvinar ante nec condimentum fringilla</p>
-			<aside class="learn-more-button">
-				<div class="secondary-cta left"><a href="sunland-community.html">LEARN MORE</a>
-			     </div>
-			</aside>
-		</aside>
-</div> <!--end about-us-->
+
+                <div class="secondary-cta"><a class="services-button" href="our-services.html">VIEW SERVICES</a>
+                </div>
+
+            </div>
+    </aside> 
+		
+
+    <aside class="about-two">
+
+        <div class="about-image">
+
+			<img  class="image-medium right" src="images/sunland-superheroes-family.jpg">
+
+        </div>
+        <div class="about-content right">
+
+				<h2>Super Hero Grime Fighters</h2>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor et tellus vitae ultrices. Vestibulum pulvinar ante nec condimentum fringilla</p>
+		
+				<div class="secondary-cta"><a href="sunland-community.html">LEARN MORE</a>
+			    </div>
+            </div>
+	
+    </aside>
+</section>
+
+<!-- end "about sunland" section -->
+
 <!-- ".." jumps out of the existing directory and links to the parent directory. This ".." before each "a" is not a global command. In directories that are sibling to this page, the ".." is not needed --> 
 <footer>
     <div id="footer-content">
@@ -95,7 +124,6 @@
             <li><strong>SUNLAND</strong></li>
             <li><a href="about-us">About Us</a></li>
             <li><a href="sunland-community.html">Community</a></li>
-            <li><a href="news">In The News</a></li>
         </ul>
         <ul class="footer-col left">
             <li><strong>SERVICES</strong></li>
