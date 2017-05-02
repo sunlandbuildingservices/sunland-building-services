@@ -126,8 +126,9 @@ aside a {
 .services {
     width: 65%;
     margin: 0 auto;
-    margin-top:5%;
+/*    margin-top:5%;*/
     margin-bottom:10%;
+/*    padding-bottom: 10%;*/
     text-align: center;
 }
 .services p {
@@ -596,13 +597,13 @@ nav ul li {
     
 footer {
     
-  width:100%;
-	background-color:#008BC1;
   height: 100%;
-	border-bottom:solid 5px rgba(52,52,52,.2);
-	border-top:solid 5px rgba(52,52,52,.2);
-    
-	}
+  clear:both;
+	} 
+  .footer-col {
+    float:none;
+  }
+
  
 /************************/
 /* end: mobile footer*/
@@ -625,7 +626,13 @@ footer {
   line-height: 28px;
 }
 
+/*********************************/
+/* start: mobile services page styling*/
+/*******************************/
 
+.service-icon {
+  float:none;
+}
 
 
 
