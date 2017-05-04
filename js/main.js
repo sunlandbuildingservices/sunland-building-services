@@ -12,12 +12,14 @@ $("nav ul li:first-child").click(function(){
 	//of the navigation in the mobile css
 	// $("nav").toggleClass("show");
 	// console.log("navigation opened")
-setTimeout(function(){var a=document.createElement("script");
-var b=document.getElementsByTagName("script")[0];
-a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0018/1714.js?"+Math.floor(new Date().getTime()/3600000);
-a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-        console.log("crazy egg script installed");
 
+    //the below script is for crazy egg heatmap tracking
+            setTimeout(function(){var a=document.createElement("script");
+            var b=document.getElementsByTagName("script")[0];
+            a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0018/1714.js?"+Math.floor(new Date().getTime()/3600000);
+            a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+                console.log("crazy egg installed");
+    // end crazy egg heatmap tracking
 })
   
 });
