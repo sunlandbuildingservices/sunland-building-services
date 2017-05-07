@@ -25,14 +25,13 @@ $("nav ul li:first-child").click(function(event){
 	// console.log("navigation opened")
 
     //the below script is for crazy egg heatmap tracking
-            setTimeout(function(){var a=document.createElement("script");
-            var b=document.getElementsByTagName("script")[0];
-            a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0018/1714.js?"+Math.floor(new Date().getTime()/3600000);
-            a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-                console.log("crazy egg installed");
+            // setTimeout(function(){var a=document.createElement("script");
+            // var b=document.getElementsByTagName("script")[0];
+            // a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0018/1714.js?"+Math.floor(new Date().getTime()/3600000);
+            // a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+            //     console.log("crazy egg installed");
     // end crazy egg heatmap tracking
-})
->>>>>>> origin/master
+// })
   
 
 
