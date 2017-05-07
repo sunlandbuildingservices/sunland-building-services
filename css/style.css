@@ -545,8 +545,10 @@ nav.show {
 
 nav {
   float:none;
+  display: inline-block;
+  width:100%;
   text-align: center;
-  transition: 1s height;
+  transition: 1s;
   height: 0;
   overflow: hidden;
 
@@ -559,6 +561,15 @@ nav ul {
 nav ul li {
     float:none;
 }
+  nav ul li:first-child {
+      display: block;
+
+}
+
+  nav ul li:first-child:hover{
+  cursor:pointer;
+}
+
 
 /**********************/
 /* end: mobile nav  **/
