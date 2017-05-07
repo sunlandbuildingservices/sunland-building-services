@@ -1,9 +1,20 @@
-//this is a function designed to smoothly hide and 
-//expose the hamburger navigation on mobile devices
-//the hamburger is a list item of the desktop nav
-//with nested lines
+
 $(document).ready(function(){
 $("nav ul li:first-child").click(function(){
+<<<<<<< HEAD
+	console.log('hamburger clicked');
+$("nav ul li:first-child").click(function(event){
+   event.preventDefault();
+   	console.log('default prevented')
+   	});
+
+
+
+
+	$("nav").toggleClass("show");
+	console.log("navigation opened");
+
+=======
 	console.log("hamburger clicked")
 	//very cool slide toggle function, doesn't work in
 	//all browsers
@@ -21,5 +32,14 @@ $("nav ul li:first-child").click(function(){
                 console.log("crazy egg installed");
     // end crazy egg heatmap tracking
 })
+>>>>>>> origin/master
   
+
+
 });
+
+});
+
+
+
+

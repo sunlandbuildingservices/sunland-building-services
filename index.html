@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800" rel="stylesheet">
-
+ 
     <!-- link to Jquery and external javascript file -->
     
  <!--crazy egg script in the head just in case the external js code doesn't work -->
@@ -24,9 +24,10 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 <!--end crazy egg head script-->
 
 </head>
+
 <body>
+<div id="wrapper">
     <header>
-        <div class="wrapper">
     	<a href="index.html"><img id="logo" src="images/sunland_logo.png" width="100px"/></a>
     	 	<nav>
     			<ul>
@@ -38,11 +39,10 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
     <!-- hamburger nav lines for mobile-->
                     </li>
     				<li><a href="#">About</a></li>
-    				<li><a href="#">Services</a></li>
+    				<li><a href="services/index.html">Services</a></li>
     				<li><a href="contact.html">Contact</a></li>
     			</ul>
     		</nav>
-        </div>
     </header>
 <section class="hero tall">
     	<h1>Buildings Are Our Business, Since 1985.</h1>
@@ -72,9 +72,12 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
             </ul>
         </section>
     </section>
-<section class="testimonial medium">
-	<h2>What Our Customers Say</h2>
-	<p class="testimonial-1"><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consequat nisl ut dui vulputate, ac condimentum ipsum molestie. Sed tincidunt porta pellentesque. Vivamus sapien nulla. - Bob Anderson</i></p>
+<section class="testimonial">
+	<h2>Real Customer Quotes:</h2>
+	<p class="testimonial-1"><i>"I have worked with Rick for over 20 years, and have recommended him to many organizations for his excellent service and value. I can honestly say that Rick has never disappointed me or those clients that he serviced. His staff are well trained, his cost is highly competitive, and his follow up skills are outstanding. I look forwad to continued excellent relationship with Rick and his staff."</i>
+    <br> 
+    <br>
+    - <strong>Alexander Maximos, Regional Vice President at Sodexo</strong></p>
 </section>
 
 <aside class="free-quote">
@@ -161,5 +164,6 @@ a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
         <p id="legal">© 2017 Sunland Window Cleaning. All Rights Reserved. Website by <a href="http://www.cartoonfood.com">Cartoon Food</a></p>
     </div>
 </footer>
+    </div> <!-- this is the end of the "wrapper" id -->
     </body>
 </html>
