@@ -20,13 +20,7 @@ $("nav ul li:first-child").click(function(event){
 	// });
 
 
-  
-
-
-});
+ });
 
 });
-
-
-
 

@@ -6,34 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800" rel="stylesheet">
 <!-- the ".." jumps out of the current directoyr to access the global image folder and stylesheet. -->
-    <-- this text is for Crazy Egg heatmap tracking --></-->
-    <script type="text/javascript">
-            setTimeout(function(){var a=document.createElement("script");
-            var b=document.getElementsByTagName("script")[0];
-            a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0018/1714.js?"+Math.floor(new Date().getTime()/3600000);
-            a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
-                console.log("crazy egg installed");
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script type="text/javascript" src="../js/article.js"></script>
     
 </head>
 <body>
-<header>
-	<a href="#"><img id="logo" src="../images/sunland_logo.png" width="100px"/></a>
-	 	<nav>
-			<ul>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</nav> 
-</header>
+    <header>
+        <a href="..sl/index.html"><img id="logo" src="../images/sunland_logo.png" width="100px"/></a>
+            <nav>
+                <ul>
+                    <li>
+    <!-- hamburger nav lines for mobile-->
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+    <!-- hamburger nav lines for mobile-->
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="services/index.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    </header>
     <section class="article">
         <h3>Building Caulking By Sunland</h3>
             <p>At Sunland Building Services and Window Cleaning, we have years of experience with building caulking and building sealant services in order to make your investment or place of business structurally sound and capable of withstanding even the harshest of weather conditions that the Golden State can dish out.</p>
+
+        
         <h3>Let Sunland Handle Your Building Caulking Needs</h3>
-            <p>It’s a fact of life that as buildings get older the original building caulking applied to keep insects and mother nature out of your structure will wear out over time. Therefore it is absolutely essential to have the caulking on your building reapplied by experienced professionals as it is needed to keep your business intact.</p>
-            <p> At Sunland Window Cleaning and Building Services we exercise the highest level of professionalism when it come to building caulking and sealant, and we take the protection and long term durability of your structure and the application of caulking and sealant very seriously.</p>
-            <p>Don’t let mother nature tear down your business, trust Sunland for all your building caulking and sealant needs.</p>
+
+         <p class="read-more"><a href="#">Read more</a></p>
+
+            <p class="hide" id="show-this-on-click">It’s a fact of life that as buildings get older the original building caulking applied to keep insects and mother nature out of your structure will wear out over time. Therefore it is absolutely essential to have the caulking on your building reapplied by experienced professionals as it is needed to keep your business intact. At Sunland Window Cleaning and Building Services we exercise the highest level of professionalism when it come to building caulking and sealant, and we take the protection and long term durability of your structure and the application of caulking and sealant very seriously.
+            Don’t let mother nature tear down your business, trust Sunland for all your building caulking and sealant needs.</p>
+        <p class="read-less hide"><a href="#">Read less</a></p>
+
     </section>
 <section class="free-quote-dark">
 	<div class="primary-cta">
@@ -42,28 +50,27 @@
 
 </section>
 <!-- ".." jumps out of the existing directory and links to the parent directory. This ".." before each "a" is not a global command. In directories that are sibling to this page, the ".." is not needed --> 
-<footer class="medium">
+<footer>
     <div id="footer-content">
         <ul class="footer-col left">
             <li><strong>SUNLAND</strong></li>
-            <li><a href="../about-us">About Us</a></li>
-            <li><a href="../sunland-community.html">Community</a></li>
-            <li><a href="../news">In The News</a></li>
+            <li><a href="about-us">About Us</a></li>
+            <li><a href="sunland-community.html">Community</a></li>
         </ul>
         <ul class="footer-col left">
             <li><strong>SERVICES</strong></li>
-            <li><a href="window-cleaning.html">Window Cleaning</a></li>
-            <li><a href="building-caulking.html">Building Caulking</a></li>
-            <li><a href="../sunland-community.html">Super Heroics</a></li>
-            <li><a href="pressure-washing.html">Pressure Washing</a></li>
-            <li><a href="pest-and-bird-control.html">Pest and Bird Control</a></li>
+            <li><a href="services/window-cleaning.html">Window Cleaning</a></li>
+            <li><a href="services/building-caulking.html">Building Caulking</a></li>
+            <li><a href="sunland-community.html">Super Heroics</a></li>
+            <li><a href="services/pressure-washing.html">Pressure Washing</a></li>
+            <li><a href="services/pest-and-bird-control.html">Pest and Bird Control</a></li>
         </ul>
         <ul class="footer-col left">
             <li><br></li>
-            <li><a href="solar-panel-cleaning.html">Solar Panel Cleaning</a></li>
-            <li><a href="roof-equipment-inspections.html">Roof Inspections</a></li>
-            <li><a href="metal-restoration.html">Metal Restoration</a></li>
-            <li><a href="commercial-painting.html">Commercial Painting</a></li>
+            <li><a href="services/solar-panel-cleaning.html">Solar Panel Cleaning</a></li>
+            <li><a href="services/roof-equipment-inspections.html">Roof Inspections</a></li>
+            <li><a href="services/metal-restoration.html">Metal Restoration</a></li>
+            <li><a href="services/commercial-painting.html">Commercial Painting</a></li>
         </ul>
         <ul class="footer-col left">
             <li><strong>CONTACT</strong></li>
@@ -71,8 +78,9 @@
             <li>Address: 185 Viking Ave</li>
             <li>Brea, CA 92821</li>
         </ul>
+        <p id="legal">© 2017 Sunland Window Cleaning. All Rights Reserved. Website by <a href="http://www.cartoonfood.com">Cartoon Food</a></p>
     </div>
 </footer>
-    <p id="legal">© 2017 Sunland Window Cleaning. All Rights Reserved. Website by <a href="http://www.cartoonfood.com">Cartoon Food</a></p>
+   </div> 
     </body>
 </html>
