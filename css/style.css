@@ -557,7 +557,7 @@ form {
 
   .hero {
     padding: 75px 0px 75px 0px;
-    background: url(../images/los-angeles-x-large.png) no-repeat center center fixed;
+    background: url(../images/los-angeles-x-large.png) /*no-repeat center center fixed;*/
   }
   .hero h1 {
     font-size: 34px;
