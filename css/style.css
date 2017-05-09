@@ -300,12 +300,14 @@ aside a {
 .image-medium {
 	width:50%;
   height: 100%;
+  min-width: 320px;
 }
 
 .about-content {
 width:50%;
 height:100%;
 padding:5%;
+min-width: 320px;
 
 }
 
@@ -530,6 +532,15 @@ form {
 /* start: mobile nav  */
 /*********************/
 
+/********************/
+/* change header height to fluid */
+/* so the slide toggle function works */
+
+header {
+
+  height: 10%;
+}
+
 /***********************/
 /* hamburger visible  */
 /*********************/
@@ -539,7 +550,7 @@ nav ul li:first-child {
 }
 
 nav.show {
-    height:7em;
+    height:12em;
 
   }
 
@@ -595,8 +606,14 @@ nav ul li {
 /* start: mobile "about sunland" styling*/
 /***************************************/
 
+.about {
+  margin-bottom:50px;
+  text-align: center;
+}
+
 .about-one {
   float: none;
+
 
 }
 .about-two {
