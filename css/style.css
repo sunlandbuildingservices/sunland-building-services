@@ -58,7 +58,6 @@ p {
 
 header {
 	width:100%;
-  height: 15%;
 	background-color:#F5F5F5;
 	color: #fff;
 	border-bottom:solid 5px rgba(52,52,52,.2);
@@ -362,7 +361,7 @@ min-width: 320px;
 .article p a {
    font-size: 16px;
     font-weight: 600;
-    color: #343434;
+    color: #008BC1;
 }
 .news-logos {
     width:75%;
@@ -407,13 +406,14 @@ footer a {
     margin-top:3%;
 }
 #legal {
-    font-size: 8px;
+    font-size: 10px;
     color:#f8f8f8;
     clear:both;
 }
 #legal a {
-    font-size: 8px;
+    font-size: 10px;
     color:#f8f8f8;
+    text-decoration: underline;
 }
 /****************************************/
 /*form styling*current as of 04-26-2017*/
@@ -719,6 +719,9 @@ footer {
 .article p {
   font-size:16px;
   line-height: 28px;
+}
+.article-image {
+  display: none;
 }
 
 /*********************************/
