@@ -552,6 +552,21 @@ form {
 /*********************/
 
 /***********************/
+/* start: hero mobile stylin  */
+/*********************/
+
+  .hero {
+    padding: 75px 0px 75px 0px;
+  }
+  .hero h1 {
+    font-size: 34px;
+  }
+  .hero h3 {
+    font-size: 18px;
+  }
+
+
+/***********************/
 /* hamburger visible  */
 /*********************/
 
@@ -617,7 +632,7 @@ nav ul li {
 /***************************************/
 
 .about {
-  margin-bottom:250px;
+  margin-bottom:325px;
   width: 100;
   padding-left:0;
 }
@@ -625,6 +640,7 @@ nav ul li {
 .about-one {
   float: none;
   width: 100%;
+  margin-bottom:40px;
 
 
 
@@ -639,8 +655,6 @@ nav ul li {
 .about-content {
   float:none;
   width: 100%;
-
-
 
 }
 .about-image {
