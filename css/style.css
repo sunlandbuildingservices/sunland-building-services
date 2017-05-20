@@ -536,7 +536,7 @@ form {
 .line {
     display:block;
     width:40px;
-    height:5px;
+    height:2px;
     border-radius:50px;
     margin-bottom:10px;
     background-color:#BBBBBB;
@@ -605,12 +605,21 @@ nav ul li {
     float:none;
 }
   nav ul li:first-child {
-      display: block;
+    display: block;
 
 }
 
   nav ul li:first-child:hover{
   cursor:pointer;
+}
+
+header img {
+  margin-left:20px;
+  padding-top:20px;
+  padding-bottom:0px;
+  width: 15%;
+  max-width: 100px;
+  min-width: 75px;
 }
 
 
