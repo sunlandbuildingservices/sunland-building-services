@@ -295,10 +295,8 @@ aside a {
 
 .about {
 	width:100%;
-  height:100%;
   /*	background-color:#fff;*/
 	text-align: center;
-  padding:5%;
   overflow:hidden;
 }
 .about-one {
@@ -648,9 +646,8 @@ header img {
 /***************************************/
 
 .about {
-  margin-bottom:325px;
-  width: 100;
-  padding-left:0;
+  padding-top:8%;
+  padding-bottom:8%;
 }
 
 .about-one {
@@ -749,3 +746,6 @@ footer {
 .services {
   height: inherit;
 }
+
+} 
+
