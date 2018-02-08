@@ -213,28 +213,28 @@ aside a {
   padding-bottom:5%;
 }
 .primary-cta {
-	font-size: 20px;
-	font-weight: bold;
+/*	font-size: 20px;*/
+/*	font-weight: bold;*/
     color:#ffffff;
 	width: 300px;
 	height: 72px;
 	border-radius: 50px;
 	background-color:#ff9500;
-	padding: 25px 10px;
+	padding: 27px;
 	margin:auto;
     text-align: center;
 }
 .secondary-cta {
 	color: #008bc1;
-	font-weight: bold;
+/*	font-weight: bold;*/
 	width: 300px;
 	height: 72px;
 	border-radius: 50px;
-	border:5px solid #008bc1;
+	border:1px solid #008bc1;
 	background-color: #ffffff;
-	padding: 20px 10px;
+	padding: 26px;
 	margin:auto;
-    text-align: center;
+  text-align: center;
 }
 .testimonial {
 	width:100%;
@@ -385,7 +385,7 @@ min-width: 320px;
 footer {
 	width:100%;
 	background-color:#008BC1;
-  height: 300px;
+  height: 100%;
 	border-bottom:solid 5px rgba(52,52,52,.2);
 	border-top:solid 5px rgba(52,52,52,.2);
 	}
@@ -408,7 +408,7 @@ footer a {
 }
 
 #footer-content {
-    margin-left:20%;
+    margin-left:10%;
     margin-top:3%;
 }
 #legal {
