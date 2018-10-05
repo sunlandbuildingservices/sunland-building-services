@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="app">
 <head>
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -14,10 +14,6 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,800" rel="stylesheet">
 
-    <!-- link to Jquery and external javascript file -->
-    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>  
-
 
 </head>
 
@@ -26,23 +22,10 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPGX9MQ"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <header>
-    	<a href="index.html"><img id="logo" src="images/sunland_logo.png" width="100px"/></a>
-    	 	<nav>
-    			<ul>
-                    <li>
-    <!-- hamburger nav lines for mobile-->
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-    <!-- hamburger nav lines for mobile-->
-                    </li>
-    				<li><a href="about-us.html">About</a></li>
-    				<li><a href="services/index.html">Services</a></li>
-    				<li><a href="contact.html">Contact</a></li>
-    			</ul>
-    		</nav>
-    </header>
+
+<navigation></navigation>
+
+
 <div id="wrapper">
 <section class="hero tall">
     	<h1>Buildings Are Our Business, Since 1985.</h1>
@@ -134,36 +117,29 @@
 </div> <!-- this is the end of the "wrapper" id -->
 <!-- end "about sunland" section -->
  
-<footer>
-    <div id="footer-content">
-        <ul class="footer-col left">
-            <li><strong>SUNLAND</strong></li>
-            <li><a href="about-us.html">About Us</a></li>
-            <li><a href="sunland-community.html">Super Heroics</a></li>
-            <li><a href="what-happened-to-the-la-river-infographic.html">L.A River Infographic</a></li>
-        </ul>
-        <ul class="footer-col left">
-            <li><strong>SERVICES</strong></li>
-            <li><a href="services/window-cleaning.html">Window Cleaning</a></li>
-            <li><a href="services/building-caulking.html">Building Caulking</a></li>
-            <li><a href="services/pressure-washing.html">Pressure Washing</a></li>
-            <li><a href="services/pest-and-bird-control.html">Pest and Bird Control</a></li>
-        </ul>
-        <ul class="footer-col left">
-            <li><br></li>
-            <li><a href="services/solar-panel-cleaning.html">Solar Panel Cleaning</a></li>
-            <li><a href="services/roof-equipment-inspections.html">Roof Inspections</a></li>
-            <li><a href="services/metal-restoration.html">Metal Restoration</a></li>
-            <li><a href="services/commercial-painting.html">Commercial Painting</a></li>
-        </ul>
-        <ul class="footer-col left">
-            <li><strong>CONTACT</strong></li>
-            <li>Phone:<strong> <a href="tel:7145296254">(714) 529-6254</a></strong></li>
-            <li>101 W. Central Avenue, Suite B #102</li>
-            <li>Brea, Ca 92821</li>
-        </ul>
-        <p id="legal">© 2017 Sunland Window Cleaning. All Rights Reserved. Website by <a href="http://www.cartoonfood.com">Cartoon Food</a></p>
-    </div>
-</footer>
+<footer></footer>
+
+            <!-- Core External -->
+            <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    
+            <!-- Additional External -->
+            <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+            <script src="https://unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/4.4.9/ui-grid.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-notification/0.3.6/angular-ui-notification.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+
+            <!-- Internal JS -->
+            <script src="js/app.js"></script>
+            <script src="/components/footer/component.js"></script>
+            <script src="/components/navigation/component.js"></script>
+
     </body>
 </html>

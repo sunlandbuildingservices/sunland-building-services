@@ -1,25 +1,29 @@
-[debug] [2018-10-05T09:01:53.845Z] ----------------------------------------------------------------------
-[debug] [2018-10-05T09:01:53.847Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
-[debug] [2018-10-05T09:01:53.848Z] CLI Version:   5.0.0
-[debug] [2018-10-05T09:01:53.848Z] Platform:      darwin
-[debug] [2018-10-05T09:01:53.848Z] Node Version:  v8.11.2
-[debug] [2018-10-05T09:01:53.848Z] Time:          Fri Oct 05 2018 02:01:53 GMT-0700 (PDT)
-[debug] [2018-10-05T09:01:53.848Z] ----------------------------------------------------------------------
+[debug] [2018-10-05T10:17:32.403Z] ----------------------------------------------------------------------
+[debug] [2018-10-05T10:17:32.405Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2018-10-05T10:17:32.405Z] CLI Version:   5.0.0
+[debug] [2018-10-05T10:17:32.405Z] Platform:      darwin
+[debug] [2018-10-05T10:17:32.406Z] Node Version:  v8.11.2
+[debug] [2018-10-05T10:17:32.406Z] Time:          Fri Oct 05 2018 03:17:32 GMT-0700 (PDT)
+[debug] [2018-10-05T10:17:32.406Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-10-05T09:01:53.860Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-10-05T09:01:53.860Z] > authorizing via signed-in user
-[debug] [2018-10-05T09:01:53.861Z] [iam] checking project sunland-building-services for permissions ["firebase.projects.get"]
-[debug] [2018-10-05T09:01:53.863Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/sunland-building-services:testIamPermissions  
+[debug] [2018-10-05T10:17:32.417Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-10-05T10:17:32.417Z] > authorizing via signed-in user
+[debug] [2018-10-05T10:17:32.417Z] [iam] checking project sunland-building-services for permissions ["firebase.projects.get"]
+[debug] [2018-10-05T10:17:32.419Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-10-05T10:17:32.419Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2018-10-05T10:17:32.745Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-05T10:17:32.756Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/sunland-building-services:testIamPermissions  
 
-[debug] [2018-10-05T09:01:54.523Z] <<< HTTP RESPONSE 200
-[debug] [2018-10-05T09:01:54.524Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/sunland-building-services  
+[debug] [2018-10-05T10:17:33.221Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-05T10:17:33.222Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/sunland-building-services  
  
-[debug] [2018-10-05T09:01:54.914Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-05T10:17:33.718Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/Users/studiomacpro/Desktop/my-code/sunland-building-services'...
 [info] 
-[debug] [2018-10-05T09:01:54.916Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/923772014824/clients/_:getWebAppConfig  
+[debug] [2018-10-05T10:17:33.719Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/923772014824/clients/_:getWebAppConfig  
  
-[debug] [2018-10-05T09:01:55.260Z] <<< HTTP RESPONSE 200
+[debug] [2018-10-05T10:17:34.106Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
