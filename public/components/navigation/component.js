@@ -2,7 +2,7 @@ angular
 .module('app')
 .component('navigation',{
     controller: 'NavigationController',
-    templateUrl: 'components/navigation/template.html',
+    templateUrl: '/components/navigation/template.html',
     bindToController: true
 })
 .controller('NavigationController', function($scope, UserFactory,){
