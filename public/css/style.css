@@ -334,7 +334,7 @@ min-width: 320px;
 .article {
     width: 50%;
     margin: 0 auto;
-    margin-top:5%;
+    /* margin-top:5%; */
     margin-bottom:5%;
 }
 .article h2 {
