@@ -548,7 +548,7 @@ form {
 /* hamburger visible  */
 /*********************/
 
-nav ul li:first-child {
+/* nav ul li:first-child {
     display: block;
 }
 
@@ -582,7 +582,7 @@ nav ul li {
 
   nav ul li:first-child:hover{
   cursor:pointer;
-}
+} */
 
 
 /**********************/
